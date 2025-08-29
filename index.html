@@ -24,7 +24,7 @@
 
   <main>
     <section class="hero">
-      <h2>Clean Spaces. Happy Faces.</h2>
+      <h2>Bringing Peace to Every Room.</h2>
       <p>We are a family-run cleaning service based in Seattle. With over 5 years of experience, we bring peace of mind and sparkle to your home.</p>
     </section>
 
@@ -32,8 +32,8 @@
       <h3>Our Services</h3>
       <ul>
         <li>Move-In / Move-Out Cleaning</li>
-        <li>Standard Home Cleaning</li>
-        <li>One-Time or Monthly Plans</li>
+        <li>Deep or Standard Home Cleaning</li>
+        <li>One-Time or Bi-weekly, Monthly Plans</li>
       </ul>
     </section>
 
@@ -59,6 +59,28 @@
         <button onclick="nextReview()">›</button>
       </div>
     </section>
+
+    <section class="gallery">
+      <h3>Before & After</h3>
+      <div class="gallery-grid">
+        
+        <!-- Kitchen -->
+        <div class="gallery-pair">
+          <img src="images/kitchen.png" alt="BeforeAfter Kitchen" onclick="openLightbox(this)" />
+        </div>
+    
+        <!-- Bedroom -->
+        <div class="gallery-pair">
+          <img src="images/bedroom.png" alt="BeforeAfter Bedroom" onclick="openLightbox(this)" />
+        </div>
+    
+      </div>
+    </section>
+
+    <!--- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Preview" />
+    </div>
   </main>
 
   <footer>
@@ -88,6 +110,20 @@
     // Optional: auto-rotate every 6 seconds
     setInterval(nextReview, 6000);
   </script>
+
+<script>
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
 
 </body>
 </html>
