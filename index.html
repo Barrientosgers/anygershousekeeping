@@ -36,11 +36,58 @@
         <li>One-Time or Monthly Plans</li>
       </ul>
     </section>
+
+    <section class="reviews">
+      <h3>What Our Clients Say</h3>
+      <div class="carousel">
+        <div class="review active">
+          <p>"AnyGer's Housekeeping went above and beyond for our move-out clean. Everything was spotless!"</p>
+          <span>– Rachel M.</span>
+        </div>
+        <div class="review">
+          <p>"Super friendly, professional, and always on time. Highly recommend them!"</p>
+          <span>– Marco G.</span>
+        </div>
+        <div class="review">
+          <p>"I love coming home to a clean space after they visit. Best investment I've made this year."</p>
+          <span>– Emily T.</span>
+        </div>
+      </div>
+    
+      <div class="carousel-buttons">
+        <button onclick="prevReview()">‹</button>
+        <button onclick="nextReview()">›</button>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 AnyGers Housekeeping | Seattle, WA</p>
   </footer>
+
+  <script>
+    let current = 0;
+    const reviews = document.querySelectorAll('.review');
+  
+    function showReview(index) {
+      reviews.forEach((r, i) => {
+        r.classList.toggle('active', i === index);
+      });
+    }
+  
+    function nextReview() {
+      current = (current + 1) % reviews.length;
+      showReview(current);
+    }
+  
+    function prevReview() {
+      current = (current - 1 + reviews.length) % reviews.length;
+      showReview(current);
+    }
+  
+    // Optional: auto-rotate every 6 seconds
+    setInterval(nextReview, 6000);
+  </script>
 
 </body>
 </html>

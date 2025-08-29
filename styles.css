@@ -160,3 +160,63 @@
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
+
+  .reviews {
+    background-color: #fffaf7;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .reviews h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #5c473e;
+  }
+  
+  .carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .review {
+    display: none;
+    transition: opacity 0.5s ease;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .review.active {
+    display: block;
+  }
+  
+  .review p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .review span {
+    display: block;
+    font-weight: bold;
+    color: #8d6748;
+  }
+  
+  .carousel-buttons {
+    margin-top: 20px;
+  }
+  
+  .carousel-buttons button {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    background-color: #8d6748;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-buttons button:hover {
+    background-color: #5c473e;
+  }
