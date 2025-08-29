@@ -1,0 +1,98 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 20px 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  nav a:hover {
+    color: #8d6748;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fffaf7;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #5c473e;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+    color: #666;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 60px 20px;
+    background: #ffffff;
+    text-align: center;
+  }
+  
+  .services h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .services ul {
+    list-style: none;
+  }
+  
+  .services li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    color: #444;
+  }
+  
+  /* Footer */
+  footer {
+    background: #f3f3f3;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #888;
+  }
